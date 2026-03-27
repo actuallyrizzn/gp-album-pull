@@ -27,7 +27,5 @@ This file is **documentation** — licensed under **CC BY-SA 4.0** (see `LICENSE
 
 - Public link–shared albums only; no OAuth. Relies on undocumented Google Photos web markup — expect occasional breakage; see maintenance doc and changelog.
 
-<!-- After the first GitHub release, add compare links under the repository URL. -->
-
 [Unreleased]: https://github.com/actuallyrizzn/gp-album-pull/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/actuallyrizzn/gp-album-pull/releases/tag/v0.1.0

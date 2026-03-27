@@ -1,5 +1,7 @@
 # gp-album-pull
 
+**Repository:** https://github.com/actuallyrizzn/gp-album-pull
+
 Download all images from a **link-shared** Google Photos album — no OAuth, no API keys. Uses the same idea as several community tools: read the public album HTML, extract embedded `lh3.googleusercontent.com/pw/...` URLs and dimensions, then fetch full size with `=wWIDTH-hHEIGHT`.
 
 **Scripts:** `gp_album_pull.sh` (Linux / macOS / Git Bash), `gp_album_pull.ps1` (Windows PowerShell), `gp_album_pull.cmd` (launcher that invokes the `.ps1` next to it).
