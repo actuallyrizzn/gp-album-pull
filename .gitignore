@@ -1,0 +1,10 @@
+# Local download output (default ./gp_download or user path)
+gp_download/
+
+# Temp / partial downloads during development
+*.img
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

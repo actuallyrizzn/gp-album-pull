@@ -1,0 +1,79 @@
+# Documentation: CC BY-SA 4.0 — see LICENSE-CC-BY-SA-4.0.txt
+name: Breakage / regression
+description: The script stopped working or returns wrong results (Google changed the page, or an edge case).
+title: "[breakage] "
+labels:
+  - breakage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thanks.** The maintainer (human or agent) triages on a **periodic repair cycle**. The more detail you add now, the faster the fix.
+
+        Read **`docs/AGENT_MAINTENANCE.md`** for what we look for.
+
+  - type: dropdown
+    id: script
+    attributes:
+      label: Which script?
+      options:
+        - gp_album_pull.sh (Linux / macOS / WSL / Git Bash)
+        - gp_album_pull.ps1 / gp_album_pull.cmd (Windows PowerShell)
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS / version
+      description: e.g. Windows 11 23H2, Ubuntu 24.04, macOS 15, Termux on Android
+      placeholder: e.g. Windows 11
+    validations:
+      required: true
+
+  - type: input
+    id: album_url
+    attributes:
+      label: Public album URL
+      description: Must be an album you are allowed to share for debugging ("Anyone with the link").
+      placeholder: https://photos.app.goo.gl/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Expected vs actual
+      description: What should have happened vs what happened (e.g. "0 images", "wrong count", "corrupt files")?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Full terminal output (stdout + stderr)
+      description: Paste the complete output of one failed run.
+      render: shell
+    validations:
+      required: true
+
+  - type: input
+    id: revision
+    attributes:
+      label: Script revision (optional)
+      description: Git commit SHA, tag, or "main as of YYYY-MM-DD"
+
+  - type: textarea
+    id: html_snippet
+    attributes:
+      label: HTML / page snippet (optional)
+      description: If you saved the album HTML with curl, paste a **small** redacted snippet around `AF_initDataCallback` or `lh3.googleusercontent.com` — **no cookies or private tokens**.
+      render: shell
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirm
+      options:
+        - label: This album URL is OK to use for debugging and is shared with the link publicly.
+          required: true

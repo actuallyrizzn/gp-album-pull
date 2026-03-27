@@ -1,0 +1,14 @@
+gp-album-pull
+Copyright (C) 2026 gp-album-pull contributors
+
+Software
+  Files: gp_album_pull.sh, gp_album_pull.ps1, gp_album_pull.cmd
+  License: GNU Affero General Public License v3.0 or later
+  See: LICENSE
+
+Documentation and other non-software materials
+  Examples: README.md, docs/, RESEARCH.md, CONTRIBUTING.md, .github/ issue templates
+  License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+  See: LICENSE-CC-BY-SA-4.0.txt
+
+SPDX: SPDX-License-Identifier for code files is AGPL-3.0-or-later where noted in file headers.
